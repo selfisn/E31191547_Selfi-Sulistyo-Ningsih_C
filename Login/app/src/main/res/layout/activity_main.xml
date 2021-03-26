@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="#EB0C4A16"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:textAlignment="center"
+            android:layout_width="215dp"
+            android:layout_height="300dp"
+            android:src="@drawable/Hidropon"/>
+        <TextView
+            android:paddingTop="0dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:textColor="#A9CCAA"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Silahkan Login untuk mulai Berbelanja"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#A9CCAA"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Masuk"
+            android:textAlignment="center"
+            android:textColor="#EB0C4A16"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#EB0C4A16"
+            android:drawableStart="@drawable/user"
+            android:hint="  Masukkan username"
+            android:paddingLeft="10dp"
+            android:textColorHint="#4CA150" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#EB0C4A16"
+            android:drawableStart="@drawable/key"
+            android:hint="  Masukkan password"
+            android:paddingLeft="10dp"
+            android:textColorHint="#4CA150" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+        <Button
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:backgroundTint="#B4F8B4"
+            android:text="Login"
+            android:textColor="#134715"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+    </LinearLayout>
