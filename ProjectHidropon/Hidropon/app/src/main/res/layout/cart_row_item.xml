@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/itemCart_NamaProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Nama Produk"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemCart_HargaProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="harga"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/itemCart_NamaProduk"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/itemCart_Jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="jumlah"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/itemCart_NamaProduk"
+        app:layout_constraintEnd_toStartOf="@+id/btnHapusCart"
+        app:layout_constraintTop_toTopOf="@+id/itemCart_NamaProduk"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="x"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/itemCart_Jumlah"
+        app:layout_constraintEnd_toStartOf="@+id/itemCart_Jumlah"
+        app:layout_constraintTop_toTopOf="@+id/itemCart_Jumlah" />
+
+    <TextView
+        android:id="@+id/itemCart_SubTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00000"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/itemCart_HargaProduk"
+        app:layout_constraintEnd_toEndOf="@+id/itemCart_Jumlah"
+        app:layout_constraintTop_toTopOf="@+id/itemCart_HargaProduk" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="SUB TOTAL : "
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:text="Rp."
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/itemCart_SubTotal"
+        app:layout_constraintEnd_toStartOf="@+id/itemCart_SubTotal"
+        app:layout_constraintTop_toTopOf="@+id/itemCart_SubTotal" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@ Rp."
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/itemCart_HargaProduk"
+        app:layout_constraintStart_toStartOf="@+id/itemCart_NamaProduk"
+        app:layout_constraintTop_toTopOf="@+id/itemCart_HargaProduk" />
+
+    <ImageButton
+        android:id="@+id/btnHapusCart"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemCart_SubTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/itemCart_Jumlah"
+        app:srcCompat="@drawable/delete_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
